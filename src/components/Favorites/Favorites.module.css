@@ -1,0 +1,23 @@
+.order, .filter {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #da135f;
+    border-radius: 10px;
+    background-color: #da135f;
+    color: #21056b;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .order:focus, .filter:focus {
+    outline: none;
+    border-color: #0077cc;
+  }
+  
+  .order option, .filter option {
+    background-color:#da135f;
+    color: #200599;
+  }
+  
+  
