@@ -1,0 +1,49 @@
+.nav{
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  height: 2.5rem;
+  background-color: #da135f;
+  box-shadow: 0 20px 20px rgba(206, 36, 129, 0.658);
+}
+  
+/* Estilo base de los enlaces */
+.btns a {
+  color: #4b0df58f;
+  font-size: 20px;
+  font-weight: bold; 
+  text-decoration: none;
+  margin: 2px 1em 0 auto;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  top: 05px;
+ 
+}
+
+/* Estilo de la animación */
+.btns a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 105%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+/* Animación al pasar el ratón sobre los enlaces */
+.btns a:hover::before {
+  width: 100%;
+  transition-delay: 0.1s;
+}
+
+/* Animación adicional para el texto */
+.btns a:hover {
+  transform: translateY(-5px);
+}
+

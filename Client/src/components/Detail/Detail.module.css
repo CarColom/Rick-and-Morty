@@ -1,0 +1,50 @@
+.container {
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 94vh;
+    
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 5px 5px #dd058a80
+    
+  }
+  
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.containerImg img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 1px rgba(139, 7, 179, 0.534);
+  margin-bottom: 1rem;
+}
+
+.container > div > div:last-child {
+  background-color: rgba(255, 255, 255, 0.589);
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #050505;
+  margin: 5px 0;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0e0d0d;
+  margin: 5px 0;
+}
