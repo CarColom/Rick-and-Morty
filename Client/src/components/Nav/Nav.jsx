@@ -22,7 +22,6 @@ const Nav = ({ onSearch, setAccess }) => {
             <button onClick={handleLogOut}>LOG OUT</button>
             <SearchBar onSearch={onSearch}/>
            
-            <SearchBar onSearch={onSearch}/>
         </nav>
     )
 }

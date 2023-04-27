@@ -1,5 +1,5 @@
 const { login } = require('../controllers/login');
-const { getCharById } = require('../controllers/getCharById');
+const { getCharById } = require('../controllers/getCharByld');
 const { postFav, deleteFav } = require('../controllers/handleFavorites');
 
 const router = require('express').Router();

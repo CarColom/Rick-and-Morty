@@ -1,6 +1,7 @@
 import { useState } from "react";
 import validation from "../Validation/Validation";
 import style from "./Form.module.css";
+import Fondo from "../../Imagenes/Fondo.mp4"
 
 const Form = ({ login }) => {
     const [errors, setErrors] = useState({});
@@ -27,7 +28,17 @@ const Form = ({ login }) => {
     }
 
     return(
+
+  
         <form className={style.form} onSubmit={handleSubmit}>
+      <video
+      className={style.myvideo}
+      autoPlay
+      muted
+      loop
+      src={Fondo}
+    />
+     
             
             <label htmlFor="email" style={{ color: "white"}}>Email: </label>
             <input type="email" name='email' value={userData.email} onChange={handleChange}/>
@@ -38,6 +49,7 @@ const Form = ({ login }) => {
 
             <button>Submit</button>
         </form>
+        
     )
 }
 

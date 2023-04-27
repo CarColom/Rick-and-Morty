@@ -8,6 +8,8 @@ import Favorites from "./components/Favorites/Favorites";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import style from "../src/components/Form/Form.module.css";
+import Fondo from "../src/Imagenes/Fondo.mp4"
 
 
 //const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
@@ -60,7 +62,16 @@ function App() {
    }
 
    return (
+
       <div className='App'>
+            <video
+      className={style.myvideo}
+      autoPlay
+      muted
+      loop
+      src={Fondo}
+    />
+
          {
             location.pathname !== '/' && <Nav onSearch={onSearch} setAccess={setAccess} />
          }
@@ -72,8 +83,9 @@ function App() {
             <Route path='/detail/:id' element={<Detail/>} />
             <Route path='/favorites' element={<Favorites/>} />
          </Routes>
-        
-      </div>
+       
+      </div> 
+   
    );
 }
 
